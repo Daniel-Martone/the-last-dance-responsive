@@ -286,7 +286,7 @@ footer{
     background-color: rgba(0, 0, 0, 0.349);
     color: var(--cor-2);
     text-align: center;
-    margin-bottom: -20px;
+    margin-bottom: -25px;
 }
 
 footer > p > a{
