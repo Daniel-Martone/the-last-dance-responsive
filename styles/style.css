@@ -1,0 +1,304 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lobster&display=swap');
+
+:root{
+    --cor-lg: #3BBCDC;
+    --cor-0: #111D4A;
+    --cor-1: #DBB3B1;
+    --cor-2: #66ddb7;
+    --cor-3: #11c544;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-logo: 'Alfa Slab One', sans-serif;
+    --fonte-destaque: 'Lobster', serif;
+}
+
+/* BODY */
+
+body{
+    background-color: var(--cor-1);
+    margin: 0px;
+    font-family: var(--fonte-padrao);
+}
+
+.center{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.force-center{
+    display: block;
+    text-align: -webkit-center;
+}
+
+.video{
+    background-color: var(--cor-lg);
+    padding: 20px;
+    margin: 0px -15px 30px -15px;
+    padding-bottom: 56%;
+    position: relative;
+}
+
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.desc-image{
+    color: rgba(0, 0, 0, 0.705);
+    font-size: 13px;
+    margin: 1px;
+    text-align: center;
+    padding: -3px;
+}
+
+.desc-image > a{
+    font-size: 13px;
+    color: black;
+    background-image: none;
+}
+
+.desc-image > a::after{
+    content: none;
+}
+
+/* HEADER */
+
+header{
+    background-image: linear-gradient(17deg, var(--cor-2), var(--cor-3));
+    padding: 2px 4px 8px 4px;
+}
+
+header > h1{
+    font-family: var(--fonte-logo);
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 4px 3px 3px rgba(0, 0, 0, 0.329);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+header > h1 > a{
+    color: white;
+    text-decoration: none;
+}
+
+header > p{
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.329);
+}
+
+/* MENU */
+
+menu{
+    padding: 20px 0px 0px 10px;
+}
+
+
+
+
+/* LINKS MENU */
+
+menu > a{
+    color: white;
+    text-decoration: none;
+}
+
+.menulink{
+    background-color: rgba(0, 0, 0, 0.041);
+    padding: 15px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.menulink:hover{
+    padding: 20px;
+    background-color: #00000067;
+}
+
+/* MAIN */
+
+main{
+    margin: 6px 20px;
+    margin: auto;
+    max-width: 1000px;
+    min-width: 200px;
+}
+
+/* ARTICLE */
+
+article{
+    background-color: white;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: rgb(0 0 0 / 34%) 0px 4px 6px 4px
+}
+
+/* TÍTULOS */
+
+main > article > h1, h2, h3, h4, h5, h6{
+    color: var(--cor-lg);
+    font-family: var(--fonte-destaque);
+}
+main > article > h1{
+    background-color: rgba(0, 0, 0, 0.082);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+main > article > h2{
+    text-indent: 5px;
+    font-size: 34px;
+    font-weight: 100;
+    background-image: linear-gradient(90deg, #3bbcdc2d, #3bbcdc1c, #3bbcdc00);
+}
+
+/* CONTEÚDO */
+
+main > article > p{
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.7em;
+}
+
+article > p > a{
+    color: #111D4A;
+    font-weight: bold;
+    padding: 2px 4px;
+    text-decoration: none;
+    background-image: linear-gradient(90deg, rgba(175, 237, 252, 0.582), rgba(159, 250, 250, 0.226));
+}
+
+article > p > a:hover{
+    text-decoration: underline;
+} 
+
+article > p > a::after{
+    content: '🔗';
+}
+
+/* IMAGES */
+
+img{
+    width: 100%
+}
+
+main > article > img{
+    margin: 90px;
+}
+
+.foto-jogador{
+    max-width: 49%;
+    min-width: 300px;
+}
+
+/* DEPOIMENTOS */
+
+#area-depoimentos{
+    padding: 20px;
+    margin-top: 10px;
+    background-color: var(--cor-0);
+    border-radius: 20px;
+    display: block;
+    text-align: -webkit-center;
+}
+
+#area-depoimentos > .depoimento{
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+    width: 25%;
+    min-width: 170px;
+    color: black;
+    background-color: white;
+    border-radius: 30px 30px 0px 30px;
+    margin: 8px;
+}
+
+#area-depoimentos > .depoimento > span > .author-link{
+    color: var(--cor-0);
+    text-decoration: none;
+}
+
+#area-depoimentos > .depoimento > span > .author-link:hover{
+    text-decoration: underline;
+}
+
+#area-depoimentos > .depoimento > span > .author-link::before{
+    content: "~"
+}
+
+.pic-author > img{
+    width: 50px;
+    padding-left: 28%;
+    border-radius: 90px;
+}
+
+/* ARTIGOS */
+
+#relacionados{
+    border-radius: 20px;
+    color: white;
+    background-color: green;
+}
+
+#relacionados > h1{
+    padding: 20px;
+}
+
+#artigos{
+    padding: 20px;
+    margin-top: -20px;
+    background-image: linear-gradient(90deg, var(--cor-2), var(--cor-3));
+    border-radius: 0px 0px 20px 20px;
+    color: black;
+
+}
+
+#artigos > ul{
+    columns: 2;
+}
+
+#artigos > ul > li > a{
+    color: #111D4A;
+    text-decoration: none;
+}
+
+#artigos > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+li::before{
+    list-style-type: none;
+    content: "➜";
+}
+
+/* RODAPÉ */
+
+footer{
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.349);
+    color: var(--cor-2);
+    text-align: center;
+}
+
+footer > p > a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    color: rgb(226, 226, 226);
+    text-decoration: underline;
+}
+
+footer > p > a::before{
+    content: "➜";
+}
