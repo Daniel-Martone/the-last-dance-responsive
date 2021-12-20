@@ -283,10 +283,10 @@ li::before{
 /* RODAPÉ */
 
 footer{
-    height: 20px;
     background-color: rgba(0, 0, 0, 0.349);
     color: var(--cor-2);
     text-align: center;
+    margin-bottom: -20px;
 }
 
 footer > p > a{
